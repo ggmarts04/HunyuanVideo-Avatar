@@ -21,6 +21,9 @@ ENV HF_HUB_ENABLE_HF_TRANSFER=1
 # Create weights directory
 RUN mkdir -p ${MODEL_BASE}
 
+# Install hf_transfer for faster downloads
+RUN pip install --no-cache-dir hf_transfer
+
 # Download pretrained models
 # It's important to change to the correct directory before downloading
 RUN cd ${MODEL_BASE} && huggingface-cli download tencent/HunyuanVideo-Avatar --local-dir ./ --exclude "ckpts/hunyuan-video-t2v-720p/transformers/mp_rank_00_model_states.pt"
