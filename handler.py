@@ -164,9 +164,9 @@ if __name__ == "__main__":
     # Mock event
     mock_event = {
         "input": {
-            "image_url": "https://raw.githubusercontent.com/Tencent/HunyuanVideo-Avatar/main/assets/image/1.png", # Replace with a valid direct image URL
-            "audio_url": "https://raw.githubusercontent.com/Tencent/HunyuanVideo-Avatar/main/assets/audio/2.WAV", # Replace with a valid direct audio URL
-            "prompt": "A test person speaking.",
+            "image_url": "https://zockto.b-cdn.net/imgtest.jpg", # Replace with a valid direct image URL
+            "audio_url": "https://zockto.b-cdn.net/publicvoice/fiza.mp3", # Replace with a valid direct audio URL
+            "prompt": "A person is speaking.",
             "fps": 25
         }
     }
